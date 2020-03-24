@@ -1,0 +1,4 @@
+select distinct *
+from menu
+inner join orders on orders.menu_id=menu.menu_id
+left join payment on payment.order_id= orders.order_id;
